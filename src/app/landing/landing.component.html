@@ -1,0 +1,19 @@
+<div class="hero">
+</div>
+<div class="insertInfo">
+  <form>
+  <div class="form-group">
+    <input type="text" class="form-control" #apiKey value="7fcda3d64ead93b2a1b27c7b9da614d9" >
+  </div>
+  <div class="input-group mb-3 city">
+  <input type="text" class="form-control" #city placeholder="Enter City" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" (click)="getWeather(city.value, apiKey.value)" type="button">Submit</button>
+  </div>
+</div>
+</form>
+<div class="answer" >
+<ul class="nav nav-tabs" id="myTab" role="tablist" ></ul>
+<div class="tab-content " id="myTabContent" ></div>
+</div>
+</div>
